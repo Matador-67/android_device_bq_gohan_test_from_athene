@@ -1,3 +1,7 @@
+This maybe Repo for bq gohan in Future but at the Moment do not use it for gohan
+
+
+
 Device Tree for Moto G4/G4 Plus (athene)
 ===========================================
 
