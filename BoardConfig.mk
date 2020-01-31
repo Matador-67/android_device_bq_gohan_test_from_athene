@@ -14,9 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/motorola/athene
+DEVICE_PATH := device/bq/gohan
 
-BOARD_VENDOR := motorola-qcom
+BOARD_VENDOR := bq-qcom
 
 # AIDs and CAPS
 TARGET_FS_CONFIG_GEN := \
@@ -24,7 +24,7 @@ TARGET_FS_CONFIG_GEN := \
     $(DEVICE_PATH)/fs_config/file_caps.txt
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := athene,athene_f,xt1621,xt1622,xt1625,xt1626,xt1640,xt1641,xt1642,xt1643,xt1644
+TARGET_OTA_ASSERT_DEVICE := gohan, x5plus
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8952
@@ -52,11 +52,11 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 TARGET_CUSTOM_DTBTOOL := dtbTool_custom
-BOARD_DTBTOOL_ARGS := --force-v3 --motorola 1
+BOARD_DTBTOOL_ARGS := --force-v3 --bq 1
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_ARCH := arm
-TARGET_KERNEL_CONFIG := athene_defconfig
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8952
+TARGET_KERNEL_CONFIG := gohan_defconfig
+TARGET_KERNEL_SOURCE := kernel/bq/msm8976
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 
@@ -146,8 +146,8 @@ TARGET_LD_SHIM_LIBS := \
     /system/lib/hw/camera.msm8952.so|libshims_camera.so
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_athene
-TARGET_RECOVERY_DEVICE_MODULES := libinit_athene
+TARGET_INIT_VENDOR_LIB := libinit_gohan
+TARGET_RECOVERY_DEVICE_MODULES := libinit_gohan
 
 # GPS
 USE_DEVICE_SPECIFIC_GPS := true
