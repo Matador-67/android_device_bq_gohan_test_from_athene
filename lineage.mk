@@ -24,8 +24,8 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_BOOTANIMATION_HALF_RES := true
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := athene
-PRODUCT_NAME := lineage_athene
-PRODUCT_BRAND := Motorola
-PRODUCT_MANUFACTURER := Motorola
-PRODUCT_RELEASE_NAME := athene
+PRODUCT_DEVICE := gohan
+PRODUCT_NAME := lineage_gohan
+PRODUCT_BRAND := bq
+PRODUCT_MANUFACTURER := bq
+PRODUCT_RELEASE_NAME := gohan
