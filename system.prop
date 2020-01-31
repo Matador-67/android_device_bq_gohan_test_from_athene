@@ -191,7 +191,7 @@ persist.gps.qc_nlp_in_use=0
 ro.pip.gated=0
 
 # FM
-ro.fm.transmitter=false
+ro.fm.transmitter=true
 
 # Coresight
 persist.debug.coresight.config=stm-events
@@ -212,7 +212,7 @@ ro.core_ctl_max_cpu=4
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # Fingerprint
-persist.qfp=false
+persist.qfp=true
 
 persist.dpm.feature=0
 
@@ -240,11 +240,11 @@ net.tcp.2g_init_rwnd=10
 wifi.interface=wlan0
 
 # Play Store
-ro.com.google.clientidbase=android-motorola
-ro.com.google.clientidbase.ms=android-motorola
-ro.com.google.clientidbase.am=android-motorola
-ro.com.google.clientidbase.gmm=android-motorola
-ro.com.google.clientidbase.yt=android-motorola
+ro.com.google.clientidbase=android-bq
+ro.com.google.clientidbase.ms=android-bq
+ro.com.google.clientidbase.am=android-bq
+ro.com.google.clientidbase.gmm=android-bq
+ro.com.google.clientidbase.yt=android-bq
 
 #Enable delay service restart
 ro.am.reschedule_service=true
