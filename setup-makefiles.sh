@@ -17,8 +17,8 @@
 #
 
 set -e
-export DEVICE=athene
-export VENDOR=motorola
+export DEVICE=gohan
+export VENDOR=bq
 
 INITIAL_COPYRIGHT_YEAR=2016
 
