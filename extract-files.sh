@@ -17,8 +17,8 @@
 #
 
 set -e
-export DEVICE=athene
-export VENDOR=motorola
+export DEVICE=gohan
+export VENDOR=bq
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
