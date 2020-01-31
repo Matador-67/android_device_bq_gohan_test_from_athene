@@ -81,16 +81,16 @@ void vendor_load_properties()
     property_set("ro.hw.radio", radio.c_str());
 
     /* Common for all models */
-    property_override("ro.build.product", "athene");
+    property_override("ro.build.product", "gohan");
     target_ram();
     num_sims();
 
-    if (device_boot == "athene_13mp") {
-        /* Moto G4 (XT162x) */
-        property_override_dual("ro.product.device", "ro.vendor.product.device", "athene");
-        property_override("ro.build.description", "athene-user 7.0 NPJS25.93-14-18 3 release-keys");
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "motorola/athene/athene:7.0/NPJS25.93-14-18/3:user/release-keys");
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G4");
+    if (device_boot == "gohan_13mp") {
+        /* Moto gohan */
+        property_override_dual("ro.product.device", "ro.vendor.product.device", "gohan");
+        property_override("ro.build.description", "gohan-user 7.0 NPJS25.93-14-18 3 release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "bq/gohan/gohan:7.0/NPJS25.93-14-18/3:user/release-keys");
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "BQ X5 plus");
         property_set("ro.telephony.default_network", "10");
     } else {
         /* Moto G4 Plus (XT164x) */
