@@ -20,7 +20,7 @@
 #include <cutils/properties.h>
 #include <string.h>
 
-#define BTM_DEF_LOCAL_NAME "Moto G4"
+#define BTM_DEF_LOCAL_NAME "BQ Aquaris X5plus"
 #define BLUETOOTH_QTI_SW TRUE
 #define MAX_ACL_CONNECTIONS   7
 #define MAX_L2CAP_CHANNELS    16
