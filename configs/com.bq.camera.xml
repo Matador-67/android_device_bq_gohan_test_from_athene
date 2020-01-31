@@ -6,6 +6,6 @@
   -->
 
 <permissions>
-    <feature name="com.motorola.camera" />
-    <feature name="com.motorola.camera.chalmers" />
+    <feature name="com.bq.camera" />
+    <feature name="com.bq.camera.chalmers" />
 </permissions>
