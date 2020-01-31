@@ -126,7 +126,7 @@ void print_help()
     log_info("  --verbose/-v         verbose\n");
     log_info("  --force-v2/-2        output dtb v2 format\n");
     log_info("  --force-v3/-3        output dtb v3 format\n");
-    log_info("  --motorola/m         Motorola dtb version\n");
+    log_info("  --bq/m               bq dtb version\n");
     log_info("  --help/-h            this help screen\n");
 }
 
@@ -179,7 +179,7 @@ int parse_commandline(int argc, char *const argv[])
             version_override = c - '0';
             break;
         case 'm':
-            motorola_version = atoi(optarg);
+            bq_version = atoi(optarg);
             break;
         case 'v':
             verbose = 1;
